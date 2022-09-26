@@ -1,2 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 //colors
 $background-primary: #a3d2cf;
+$color-primary: #46a59f;
+$color-primary-75: #71b9b4;
+$color-primary-50: #a3d2cf;
+$color-primary-25: #d0e8e7;
+
+$color-secondary: #0f3544;
+$color-secondary-75: #4b6873;
+$color-secondary-50: #879aa1;
+$color-secondary-25: #c3ccd0;
+$color-titles: #495057; 
+$color-eastern-blue:#003645;
+
+$color-success: #0aa89a;
+$color-success-75: #6db5b0;
+$color-success-50: #A3D2CF;
+$color-success-25: #D0E8E7;
+
+$color-warning: #f6d964;
+$color-warning-75: #f8e38b;
+$color-warning-50: #FBECB2;
+$color-warning-25: #FCF5D8;
+
+$color-superdanger: #F73E31;
+$color-danger: #ea7870;
+$color-danger-75: #ef9a94;
+$color-danger-50: #F5BCB8;
+$color-danger-25: #F9DDDB;
+
+$color-dark: #071a21;
+$color-white: #ffffff;
+$color-light: #F1F4F5;
+$color-info: #CFCFCF;
+$color-grey: #818885;
+$color-muted: #B8C0BC;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Exo 2', sans-serif !important;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+a, a:hover, a:focus, a:active, a:visited {
+  text-decoration: none;
+}
+
+.ls-4 {
+  letter-spacing: 4px;
+}
+
+.text-primary {
+  color: $color-primary !important;
+}
+
+.text-secondary {
+  color: $color-secondary !important;
+}
+
+.text-white-intelligence {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.67;
+  letter-spacing: -0.15px;
+  color: rgb(255, 255, 255);
+  margin-top: 60px;
+}
+
+.text-grey {
+  color: $color-grey !important;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.67;
+  letter-spacing: -0.15px;
+  color: rgb(129, 136, 133);
+  margin-top: 0px;
+}
+
+.ps-18{
+  padding-left: 22rem !important;
+}
+
+.triangulo{
+  width: 0px;
+  height: 0px;
+  border-width: 30px;
+  border-style: solid;
+  border-color: transparent transparent rgb(15, 53, 68);
+  margin-left: -30px;
+  transform: rotate(-135deg);
+  margin-top: 86px;
+  margin-bottom: 15px;
+}
+
+.text-mutedd{
+  color: $color-muted !important;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.71;
+  letter-spacing: 3.5px;
+  margin-bottom: 55px;
+}
+
+.navbar-text-hover {
+  transition: 0.5s;
+  font-size: 12px;
+  font-family: 'Exo 2', sans-serif !important;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.navbar-text-hover:hover {
+  transition: 0.5s;
+  font-weight: bold;
+} 
+
+.logo {
+  width: 200px;
+  height: 25px;
+}
+
+.btn-navbar {
+  color: $color-primary;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 13px 26px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 3px 8px 0px;
+  &:hover {
+    color: $color-primary !important;
+  }
+}
+
+.navbar {
+  height: 100px;
+}
+
+.w-navbar {
+  max-width: 100%;
+  width: 1210px;
+}
+
+.w-banner {
+  flex-wrap: inherit;
+}
+
+.dropdown-menu {
+  box-shadow: rgb(0 0 0 / 15%) 1px 7px 23px 2px;
+  border-radius: 2px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.banner {
+  height: calc(100vh - 100px);
+  max-height: 699px;
+  background: linear-gradient(rgb(0, 25, 32) 0%, rgb(15, 53, 68) 100%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-2 {
+  height: calc(100vh - 100px);
+  max-height: 640px;
+  background: rgb(241, 244, 245);
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-banner {
+  max-width: 900px;
+  padding: 40px 40px 40px 300px;
+}
+
+.card {
+  border: none;
+}
+
+.card-banner > span {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(70, 165, 159);
+  text-transform: uppercase;
+  line-height: 3.13;
+  letter-spacing: 4px;
+}
+
+.card-banner > h2 {
+  font-size: 55px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  line-height: 0.91;
+}
+
+.card-banner > button {
+  background-color: $color-primary;
+  color: $color-white;
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 13px 30px;
+  border: none;
+  white-space: nowrap;
+  width: 320px;
+  transition: 0.5s;
+}
+
+.card-banner > button:hover {
+  transform-origin: left center;
+  width: 340px;
+}
+
+.link > button{
+  transition: 0.5s;
+  width: 180px;
+}
+
+.link > button:hover {
+  transform-origin: left center;
+  width: 200px;
+}
+
+.link2 > button{
+  transition: 0.5s;
+  width: 450px;
+}
+
+.link2 > button:hover {
+  transform-origin: left center;
+  width: 470px;
+}
+
+@media only screen and (max-width: 1215px) {
+  .img-banner {
+    display: none;
+  }
+  .card-banner {
+    padding: 20px;
+  }
+  .card-banner > h2 {
+    font-size: 35px;
+  }
+
+  .card-banner > button {
+    font-size: 13px;
+    padding: 13px;
+  }
+
+}
+
+
+.bg-cyan{
+    background-color: #bfd6c7;
+}
